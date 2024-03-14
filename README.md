@@ -1,6 +1,4 @@
-# python-
 # Python-Tutorial
-## Python Home
 ```언어
 print("Hello, World!")
 ```
@@ -20,12 +18,13 @@ if 5 > 2:
 ```
 Python Variables
 변수에 값을 할당하면 변수가 생성된다
+변수 이름은 문자나 밑줄 문자로 시작해야 하며 숫지로 시작 할 수 없다
 ```언어
 x = 112
 y = "Hello, World!"
 ```
 Comment
-#을 이용해 주석을 달 수 있다
+#을 이용해 주석을 표현한다다
 #이것은 주석입니다
 ```언어
 print("Hello, World!")
@@ -97,27 +96,21 @@ print(a[1])
 for x in "catia":
   print(x)
 ```
-### 문자열 길이
-
-#`len()`함수를 사용
+### Python While Loops
 ```언어
-a = "Hello, World!"
-print(len(a))
-```
-=13
-### Check String
+i = 1
+while i < 6:
+  print(i)
+  if (i == 3):
+    break
+  i += 1
+  
+### Python For Loops
 
-`in`과 `not in`을 사용하여 텍스트에 원하는 단어가 있는지 확인 가능하다
 ```언어
-txt = "안녕하세요, 반갑습니다"
-print("고마워요" not in txt)
-```
-= True
 
-`if` 명령문을 통해 활용 가능
-```언어
-txt = "안녕하세요, 반갑습니다"
-if "고마워요" not in txt:
-    print("No, '고마워요' is NOT present.")
-```
-= 
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  if x == "banana":
+    continue
+  print(x) 
